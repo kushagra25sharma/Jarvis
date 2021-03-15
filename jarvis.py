@@ -92,7 +92,7 @@ if __name__ == "__main__":
         elif "search for" in query:
             speak("Fetching results from the web.")
             query = query.replace("search for ", "")
-            webbrowser.get(chrome_path).open("www.google.com/search?q=" + query)
+            webbrowser.get(chrome_path).open(query)
 
 
         elif "open youtube" in query:
